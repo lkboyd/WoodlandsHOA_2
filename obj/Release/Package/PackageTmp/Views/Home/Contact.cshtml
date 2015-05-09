@@ -1,0 +1,97 @@
+﻿@model WoodlandsHOA_2.Models.ContactModels
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/Content/Images/OakTrees.jpg" alt="Woodlands HOA" style="width:500px;height:300px">
+    </div>
+    <div class="col-md-6">
+
+        <h1> Contact ACCU or The Woodlands HOA <br /><br /></h1>
+        <h3> We are a very active community and we look forward to shwoing all of the beauty that we have here!  </h3>
+    </div>
+</div>
+
+
+    &nbsp; &nbsp; &nbsp;
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .info {
+        border: 3px solid green;
+        padding-left: 10px;
+        background-color: antiquewhite;
+    }
+
+    .col-md-6 {
+        padding-right: 20px;
+    }
+
+    .info p {
+        font-size: 25px;
+    }
+</style>
+
+
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<div class="col-md-6">
+    <br /> <br />
+    <div class="info">
+        <br />
+        <p> If you have any questions or comments please let us know!  </p>
+        @using (Html.BeginForm())
+        { 
+            @Html.ValidationSummary(true)
+            <div class="contactRow">
+                @Html.LabelFor(model => model.FirstName, "First Name:")
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+            <div class="contactRow">
+                @Html.LabelFor(model => model.LastName, "Last Name:")
+                @Html.EditorFor(model => model.LastName)    
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+            <div class=" contactRow">
+                @Html.LabelFor(model => model.Email, "Email:")
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+            <div class=" contactRow">
+                @Html.LabelFor(model => model.Comment, "Comment:")
+                @Html.TextAreaFor(model => model.Comment)
+                @Html.ValidationMessageFor(model => model.Comment)
+            </div>
+            <div class="contactRow">
+                <input type="submit" value="submit" />
+                <input type="reset" value="reset" />
+            </div>
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Our Management Company</h2>
+        <p>
+            If you would like to get in contact with our Managment company ACCU please click below to access thier website directly.
+        </p>
+        <p><a class="btn btn-default" href="http://www.accuinc.com/" target=" _blank">ACCU &raquo;</a></p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>The Woodlands HOA </h2>
+        <p> If you would like more information about our community please click below to access our website directly.  </p>
+        <p><a class="btn btn-default" href="http://woodlandshoa.org/" target=" _blank">Learn more &raquo;</a></p>
+    </div>
+</div>

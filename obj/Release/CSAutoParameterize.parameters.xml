@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MapDB-Web.config Connection String" description="MapDB Connection String used in web.config by the application to access the database." defaultValue="data source = .\SQLEXPRESS;&#xD;&#xA;                            Integrated Security = SSPI;&#xD;&#xA;                            initial catalog = Map" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Views\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapDB']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-WoodlandsHOA_2-20150426114102.mdf;Initial Catalog=aspnet-WoodlandsHOA_2-20150426114102;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="HOAGarageSaleParticipantsConnectionString-Web.config Connection String" description="HOAGarageSaleParticipantsConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\HOAGarageSaleParticipants.mdf;Integrated Security=True;Connect Timeout=30" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HOAGarageSaleParticipantsConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="Context-Web.config Connection String" description="Context Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=Context-20150430215659; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|Context-20150430215659.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Context']/@connectionString" />
+  </parameter>
+  <parameter name="ParticipantsContext-Web.config Connection String" description="ParticipantsContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=ParticipantsContext-20150430215741; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|ParticipantsContext-20150430215741.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ParticipantsContext']/@connectionString" />
+  </parameter>
+  <parameter name="MapContext-Web.config Connection String" description="MapContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=MapContext-20150430220342; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|MapContext-20150430220342.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapContext']/@connectionString" />
+  </parameter>
+  <parameter name="MapDBContext-Web.config Connection String" description="MapDBContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=MapDBContext-20150430220843; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|MapDBContext-20150430220843.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Laura\\Documents\\Visual\ Studio\ 2013\\Projects\\WoodlandsHOA_2\\WoodlandsHOA_2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapDBContext']/@connectionString" />
+  </parameter>
+</parameters>

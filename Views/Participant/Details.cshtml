@@ -1,0 +1,28 @@
+﻿@model WoodlandsHOA_2.Models.Participant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Participant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.homeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.homeAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParticipantID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
